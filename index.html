@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+      <div id="categories">
+        <div class="categories" id="Fun" onclick="#"><img src="/img/fun.jpg" alt="category"></div>
+        <div class="categories" id="Military" onclick="#"><img src="/img/military.jpg" alt="military"></div>
+        <div class="categories" id="Movies" onclick="#"><img src="/img/movie.jpg" alt="category"></div>
+        <div class="categories" id="Sports" onclick="#"><img src="/img/sport.jpg" alt="category"></div>
+        <div class="categories" id="Programming" onclick="#"><img src="/img/coding.jpg" alt="category"></div>
+      </div>
+
+  </div>
+  <div id="container">
+    <div id="start">Start!</div>
+    <div id="quiz" style="display: none">
+      <div id="question"></div>
+      <div id="qImg"></div>
+      <div id="choices">
+        <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+        <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+        <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+      </div>
+      <div id="timer">
+        <div id="counter"></div>
+        <div id="btimeLine"></div>
+        <div id="timeLine"></div>
+      </div>
+      <div id="progress"></div>
+    </div>
+    <div id="scoreContainer" style="display: none"></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
